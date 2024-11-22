@@ -53,7 +53,7 @@ let nameAge = (name, age) => {
   console.log("You are " + age + " years old");
 };
 
-console.log(nameAge("Sara", "30"));
+nameAge("Sara", 30);
 
 //Q5 Convert function below into arrow function
 
@@ -63,7 +63,7 @@ console.log(nameAge("Sara", "30"));
 
 let printOnly = () => console.log("printing");
 
-console.log(printOnly());
+printOnly();
 
 //Q6 Convert function below into arrow function
 
