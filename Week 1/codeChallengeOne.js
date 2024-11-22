@@ -3,12 +3,16 @@
 // reverseString("John");
 // reverseString("James");
 
-// function reverseString(name) {
-//   let name = "Sara";
-//   for (let i=name.length, i>=0,i-- );
-// }
+function reverseString() {
+  let name = "Sara";
+  let empty = "";
+  for (let i = name.length - 1; i >= 0; i--) {
+    empty += name[i];
+  }
+  console.log(empty);
+}
 
-// console.log(reverseString("Sara"));
+reverseString();
 
 // Coding task 2 - Write a function expression called reverseArray() that return reversed array
 
@@ -19,9 +23,11 @@
 // let test = ["I", "like", "JavaScript"];
 
 let numbers = [1, 2, 3, 4, 5];
+let text = ["I", "like", "JavaScript"];
 
 function reverseArray() {
   console.log(numbers.reverse());
+  console.log(text.reverse());
 }
 
 reverseArray();
