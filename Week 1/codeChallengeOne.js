@@ -3,9 +3,11 @@
 // reverseString("John");
 // reverseString("James");
 
-function reverseString(name) {
-  return name;
+function reverseString(n, a, m, e) {
+  return e + m + a + n;
 }
+
+console.log(reverseString("S", "a", "r", "a"));
 
 // Coding task 2 - Write a function expression called reverseArray() that return reversed array
 
