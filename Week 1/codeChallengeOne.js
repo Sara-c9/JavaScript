@@ -1,28 +1,28 @@
 // Coding task 1 - Write a function expression called reverseString() that return reversed string of the name
 
-let name = "John";
+// let name = "John";
+// let name2 = "James";
 
 // Used split to transform string into an array
 // Used reverse to reverse the array
 // Used join to transfor array back to string
 
-function reverseString() {
-  console.log(name.split("").reverse().join(""));
-}
-reverseString();
+let reverseString = (name) => console.log(name.split("").reverse().join(""));
+reverseString("Jonh");
+reverseString("James");
 
 // Coding task 2 - Write a function expression called reverseArray() that return reversed array
 
-let numbers = [1, 2, 3, 4, 5];
-let text = ["I", "like", "JavaScript"];
+// let numbers = [1, 2, 3, 4, 5];
+// let text = ["I", "like", "JavaScript"];
 
 //Used the reverse function to reverse the element in the array
-function reverseArray() {
-  console.log(numbers.reverse());
-  console.log(text.reverse());
-}
+let reverseArray = (array) => {
+  console.log(array.reverse());
+};
 
-reverseArray();
+reverseArray([1, 2, 3, 4, 5]);
+reverseArray(["I", "like", "JavaScript"]);
 
 // Coding task 3 - Write a function expression called mostExpensiveItem() that returns the item that has the most cost tied up, calculated by
 // the amount in stock * price.

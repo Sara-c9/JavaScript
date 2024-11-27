@@ -6,7 +6,8 @@
 
 let greet = (name) => "Hi " + name + "!";
 
-console.log(greet("Sara"));
+console.log(greet("John"));
+console.log(greet("James"));
 
 //Q2 Convert function below into arrow function
 
