@@ -27,7 +27,7 @@ reverseArray(["I", "like", "JavaScript"]);
 // Coding task 3 - Write a function expression called mostExpensiveItem() that returns the item that has the most cost tied up, calculated by
 // the amount in stock * price.
 
-function mostExpensiveItem() {
+let mostExpensiveItem = () => {
   // Create an array of the items
   let items = [
     { item: "irn bru", price: 3.25, stock: 50 },
@@ -63,6 +63,6 @@ function mostExpensiveItem() {
   else {
     console.log(items[3]);
   }
-}
+};
 
 mostExpensiveItem();
