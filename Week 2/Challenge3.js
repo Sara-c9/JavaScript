@@ -1,11 +1,16 @@
 //Create a  User class:
 class User {
   //Add to the class a property with the name of username.
-  constructor(username) {
-    this._username = username;
+  constructor() {
+    this._username = "";
   }
 
   //Create a setter method that can set the value of the username.
+
+  get username() {
+    return this._username;
+  }
+
   set username(username) {
     this._username = username;
   }
@@ -14,6 +19,9 @@ class User {
 // Create the Admin class that inherits the User class:
 
 class Admin extends User {
+  constructor() {
+    super();
+  }
   //Add a method by the name of expressYourRole(), and make it return the string: "Admin"
 
   expressYourRole() {

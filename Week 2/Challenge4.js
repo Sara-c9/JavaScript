@@ -15,7 +15,11 @@ class User {
 
   // Add to the User class a third method calcScores()
 
-  calcScores() {}
+  calcScores() {
+    throw new Error(
+      "Method calcScores() must be implemented in the subclasses"
+    );
+  }
 }
 
 //Create an Author class that inherits from the User class
@@ -23,7 +27,6 @@ class User {
 class Author extends User {
   constructor(numberOfArticles) {
     super();
-    this.numberOfArticles = numberOfArticles;
   }
 
   calcScores() {
@@ -34,10 +37,10 @@ class Author extends User {
 //Create an Editor class that inherits from the User class
 
 class Editor extends User {
-  constructor(numberOfArticles) {
+  constructor() {
     super();
-    this.numberOfArticles = numberOfArticles;
   }
+
   calcScores() {
     return this.numberOfArticles * 6 + 15;
   }
@@ -45,10 +48,12 @@ class Editor extends User {
 
 //reate an object, author, from the Author class, set the number of articles to 8, and print the scores that the author gained
 
-const author = new Author(8);
-console.log(author.calcScores());
+const author = new Author();
+author.numberOfArticles = 8;
+console.log("Author's scores: ", author.calcScores());
 
 //Create another object, editor, from the Editor class, set the number of articles to 15, and print the scores that the editor gained
 
-const editor = new Editor(15);
-console.log(editor.calcScores());
+const editor = new Editor();
+editor.numberOfArticles = 15;
+console.log("Editor's scores: ", editor.calcScores());

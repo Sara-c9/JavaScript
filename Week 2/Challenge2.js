@@ -1,8 +1,8 @@
 // Add the class constructor.
 class User {
-  constructor(firstName, lastName) {
-    this._firstName = firstName;
-    this._lastName = lastName;
+  constructor() {
+    this._firstName = "";
+    this._lastName = "";
   }
 
   // Add the getters and setters methods after the class constructor
@@ -32,14 +32,16 @@ class User {
 
 // Create an user object called user that will represent the User class.
 
-const user = new User("John", "Doe");
+const user = new User();
 
 // Use the setters methods to set the firstName and lastName instance variables of your user object.
 
-user.firstName = "Jane";
+user.firstName = "John";
 user.lastName = "Doe";
 
 // Use getters methods to retrieve the firstName and lastName Strings from the user object and add a blank space in between.
 
+let userName = user.firstName + " " + user.lastName;
+
 console.log(user.hello());
-console.log("My name is", user.firstName, user.lastName);
+console.log("My name is", userName);
